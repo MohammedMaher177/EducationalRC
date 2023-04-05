@@ -13,16 +13,15 @@
         <div id="loading">
             <div class="loader bg-opacity-75"></div>
         </div>
-
         <div id="audio">
             <audio id="success-audio">
                 <source
-                    src="./Audio/level-complete-ring-magical-sparkle-SBA-300420665-preview.mp3"
+                    src="./Audio/level-complete-ring-magical-sparkle-SBA-300420665-preview.mpeg"
                     />
             </audio>
             <audio id="wrong-audio">
                 <source
-                    src="./Audio/feedback-incorrect-25-SBA-300287064-preview.mp3"
+                    src="./Audio/Error _ Sound Effects (No Copyright).mp3"
                     />
             </audio>
         </div>
@@ -52,22 +51,22 @@
                                     px-3
                                     fs-1
                                     cursor-pointer
-                                    rounded-3 me-3 fw-bolder">a</span>
+                                    rounded-3 me-3 fw-bolder" id="btnA">a</span>
                                 <span class=" border border-2 border-info py-2
                                     px-3
                                     fs-1
                                     cursor-pointer
-                                    rounded-3 fw-bolder">p</span>
+                                    rounded-3 fw-bolder" id="btnP">p</span>
                             </div>
                             <div class="row">
+                                <!-- C A T  -->
                                 <div class="col-6 d-flex
                                     align-items-center mb-5">
                                     <h3 class="me-2">
                                         1 &nbsp;&nbsp; t
                                         <span
-                                            class="border-0 border-bottom
-                                            cursor-pointer
-                                            border-dark p-1 pb-0">
+                                            class="border-0 border-bottom cursor-pointer
+                                            border-dark p-3 pb-0" id="tap">
                                             &nbsp;
                                             <span class="position-relative">
                                                 <i class="fa-solid fa-check
@@ -75,21 +74,23 @@
                                                 <i class="fa-solid fa-xmark
                                                     wrong text-danger fs-3"></i>
                                             </span>
-                                            <span class=" hidden">a</span>
+                                            <span class="hidden">a</span>
+                                            <span class="wrongAns">p</span>
                                         </span>
                                         p
                                     </h3>
                                     <img src="./Images/p19ex24q1_1.png" alt=""
                                         class="img-fluid">
                                 </div>
+                                <!-- C A T  -->
                                 <div class="col-sm-6 d-flex align-items-center
                                     mb-5">
                                     <h3 class="me-2">
                                         2 &nbsp;&nbsp;
-                                        <span class="border-0 border-bottom
-                                            cursor-pointer
-                                            border-dark
-                                            p-2 pb-0">&nbsp;
+                                        <span
+                                            class="border-0 border-bottom cursor-pointer
+                                            border-dark p-3 pb-0" id="cat">
+                                            &nbsp;
                                             <span class="position-relative">
                                                 <i class="fa-solid fa-check
                                                     correct text-success fs-3"></i>
@@ -97,13 +98,14 @@
                                                     wrong text-danger fs-3"></i>
                                             </span>
                                             <span class="hidden">p</span>
+                                            <span class="wrongAns">a</span>
                                         </span>
                                         a t
                                     </h3>
                                     <img src="./Images/pat.png" alt="" class="
                                         img-fluid">
-
                                 </div>
+                                <!-- M A P  -->
                                 <div class="col-12 d-flex
                                     justify-content-center
                                     align-items-center">
@@ -111,14 +113,15 @@
                                         3 &nbsp;&nbsp; m
                                         <span class="border-0 border-bottom
                                             border-dark
-                                            p-2 pb-0 cursor-pointer">&nbsp;
+                                            p-2 pb-0 cursor-pointer" id="map">&nbsp;
                                             <span class="position-relative">
                                                 <i class="fa-solid fa-check
                                                     correct text-success fs-3"></i>
                                                 <i class="fa-solid fa-xmark
                                                     wrong text-danger fs-3"></i>
                                             </span>
-                                            <span class=" hidden">a</span>
+                                            <span class="hidden">a</span>
+                                            <span class="wrongAns">p</span>
                                         </span>
                                         p
                                     </h3>

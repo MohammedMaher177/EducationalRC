@@ -78,8 +78,43 @@ body {
 .wrong {
   position: absolute;
   top: -100%;
-  /* transition: all 0.5s; */
+  transition: all 0.5s;
+}
+.correct{
   visibility: hidden;
+
+}
+.wrong {
+  /* animation-name: wrongAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: 2; */
+  /* visibility:hidden; */
+  /* opacity: 0; */
+  display: none;
+}
+.wrongAns{
+  /* visibility: hidden; */
+  display: none;
+}
+#tap{
+  width: 2rem;
+}
+@keyframes wrongAnimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .hidden {
   visibility: hidden;
@@ -91,7 +126,7 @@ body {
   h3 {
     font-size: 20px !important;
   }
-  img {
+  .row img {
     width: 50% !important;
   }
 }
