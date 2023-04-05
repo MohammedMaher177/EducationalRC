@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Css/all.min.css">
+        <link rel="stylesheet" href="./Css//bootstrap.min.css">
+        <link rel="stylesheet" href="./Css/style.css">
+        <title>Educational RC</title>
+    </head>
+    <body class="pt-5">
+        <div id="loading">
+            <div class="loader bg-opacity-75"></div>
+        </div>
+
+        <div id="audio">
+            <audio id="success-audio">
+                <source
+                    src="./Audio/level-complete-ring-magical-sparkle-SBA-300420665-preview.mp3"
+                    />
+            </audio>
+            <audio id="wrong-audio">
+                <source
+                    src="./Audio/feedback-incorrect-25-SBA-300287064-preview.mp3"
+                    />
+            </audio>
+        </div>
+        <div class="container-lg d-flex justify-content-between mb-4
+            position-relative">
+            <!-- T O P         L A Y E R -->
+            <div id="top-layer" class="layer"></div>
+            <h1>Complete the words</h1>
+            <div>
+                <button class="btn" id="dummy-btn">
+                    <img src="./Images/resourse_icon.png" alt="resourse icon">
+                </button>
+                <button class="btn" id="help-btn">
+                    <img src="./Images/help_icon.png" alt="help icon">
+                </button>
+            </div>
+        </div>
+        <div class="container-lg">
+            <section class=" bg-info px-3">
+                <div class=" container-fluid text-center border border-3 p-5
+                    shadow
+                    rounded-4 page-content bg-white">
+                    <div>
+                        <section class="container-fluid" id="main-page">
+                            <div class="mb-5">
+                                <span class=" border border-2 border-info py-2
+                                    px-3
+                                    fs-1
+                                    cursor-pointer
+                                    rounded-3 me-3 fw-bolder">a</span>
+                                <span class=" border border-2 border-info py-2
+                                    px-3
+                                    fs-1
+                                    cursor-pointer
+                                    rounded-3 fw-bolder">p</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 d-flex
+                                    align-items-center mb-5">
+                                    <h3 class="me-2">
+                                        1 &nbsp;&nbsp; t
+                                        <span
+                                            class="border-0 border-bottom
+                                            cursor-pointer
+                                            border-dark p-1 pb-0">
+                                            &nbsp;
+                                            <span class="position-relative">
+                                                <i class="fa-solid fa-check
+                                                    correct text-success fs-3"></i>
+                                                <i class="fa-solid fa-xmark
+                                                    wrong text-danger fs-3"></i>
+                                            </span>
+                                            <span class=" hidden">a</span>
+                                        </span>
+                                        p
+                                    </h3>
+                                    <img src="./Images/p19ex24q1_1.png" alt=""
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-sm-6 d-flex align-items-center
+                                    mb-5">
+                                    <h3 class="me-2">
+                                        2 &nbsp;&nbsp;
+                                        <span class="border-0 border-bottom
+                                            cursor-pointer
+                                            border-dark
+                                            p-2 pb-0">&nbsp;
+                                            <span class="position-relative">
+                                                <i class="fa-solid fa-check
+                                                    correct text-success fs-3"></i>
+                                                <i class="fa-solid fa-xmark
+                                                    wrong text-danger fs-3"></i>
+                                            </span>
+                                            <span class="hidden">p</span>
+                                        </span>
+                                        a t
+                                    </h3>
+                                    <img src="./Images/pat.png" alt="" class="
+                                        img-fluid">
+
+                                </div>
+                                <div class="col-12 d-flex
+                                    justify-content-center
+                                    align-items-center">
+                                    <h3 class="me-2">
+                                        3 &nbsp;&nbsp; m
+                                        <span class="border-0 border-bottom
+                                            border-dark
+                                            p-2 pb-0 cursor-pointer">&nbsp;
+                                            <span class="position-relative">
+                                                <i class="fa-solid fa-check
+                                                    correct text-success fs-3"></i>
+                                                <i class="fa-solid fa-xmark
+                                                    wrong text-danger fs-3"></i>
+                                            </span>
+                                            <span class=" hidden">a</span>
+                                        </span>
+                                        p
+                                    </h3>
+                                    <img src="./Images/map.png" alt=""
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </section>
+                        <section id="dummy-section"
+                            class="overflow-auto position-relative">
+                            <i class="fa-solid fa-circle-xmark position-absolute
+                                text-danger fs-2 end-0 cursor-pointer
+                                close-btn"></i>
+                            <div class="dummy-image overflow-auto">
+                                <img src="./Images/dummy.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                        </section>
+                        <section id="help-section" class="position-relative
+                            text-start">
+                            <i class="fa-solid fa-circle-xmark position-absolute
+                                text-danger fs-2 end-0 cursor-pointer
+                                close-btn"></i>
+                            <p>Help content goes here</p>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section id="btns-controls" class=" position-relative">
+                <!-- f o o t e r         L A Y E R -->
+                <div id="footer-layer"
+                    class="layer"></div>
+                <div class=" bg-opacity-50 bg-info py-md-3 px-md-5 d-flex">
+                    <div class="w-25">
+                        <button class="btn bg-info" id="resetAnsBtn">
+                            <i class="fa-solid fa-repeat fs-2 text-white"></i>
+                        </button>
+                    </div>
+                    <div class=" w-75 text-center">
+                        <button class="btn bg-success bg-opacity-50" id="showAnsBtn">
+                            <i class="fa-solid fa-eye fs-2 text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <script src="./JS/jquery-3.6.3.min.js"></script>
+        <script src="./JS/index.js"></script>
+    </body>
+</html>
